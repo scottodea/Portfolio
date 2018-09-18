@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+/* @import url('cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') */
+:root{
+    --font:Libre Baskerville;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    max-width:60%;
+}
+.container{
+    margin:0;
+    padding:0;
+    background-image:url(https://scontent.fsyd3-1.fna.fbcdn.net/v/t31.0-8/17635540_10155934729664046_880860063106615889_o.jpg?_nc_cat=0&oh=aa6e5ce20a42e5a8c2133c71cffd77cc&oe=5C20BF36);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:850px;
+}
+.container ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items:center;
+    list-style: none;
+    margin:0
+}
+#navbar a{
+    display:block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: orange;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+
+}
+#navbar a:hover{
+    background-color:#EA6341;
+    color: white;
+    transition: all 1s ease;
+    box-shadow: 1px 1px black;
+    border-radius:2%;
+}
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+.welcome{
+    font-family:-font;
+    color:white;
+    font-size:56px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(207, 66, 35);
+    text-align:center;
+    line-height:500px;
+}
+.header{
+    background: white;
+    box-shadow: 1px 1px black;
+    text-align:center;
+}
+.about{
+    box-shadow:0px 0px 20px rgb(29, 28, 28);
+    text-align:center;
+    padding:20px
+}
+.about img{
+    width:30%;
+    border-radius: 50%;
+}
+.about h1{
+    margin:0;
+    padding:50px;
+    color:rgb(209, 204, 204);
+    text-shadow:1px 1px rgb(190, 109, 32);
+    font-family:-font;
+    font-size: 50px;
+}
+.info{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.info p{
+    color:rgb(97, 59, 59);
+    font-family: --font;
+    font-size:36px;
+}
+.music{
+    text-align: center;
+}
+.music h1{
+    font-family:--font;
+    color:rgb(209, 204, 204);
+    font-size:50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(207, 66, 35);
+}
+
+.contact{
+    text-align:center;
+    box-shadow:0px 0px 20px rgb(29, 28, 28);
+}
+.contact h1{
+    color:rgb(209, 204, 204);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(207, 66, 35);
+    font-size:50px;
+}
+.logos i{
+    padding:50px;
+    line-height: 200px
+}
+
+.footer{
+    text-align:center;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+

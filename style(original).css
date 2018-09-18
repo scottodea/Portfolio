@@ -1,0 +1,185 @@
+
+body {
+	background: #0A0E55;
+	font: 16px Helvetica, Arial, Sans-Serif; color: #636363; line-height: 34px;
+}
+
+#container {
+	width: 960px; margin: 0 auto;
+ }
+
+#logo {
+    width: 15%;
+    position: relative;
+    right: -40%;
+    animation: swing 10s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+  @keyframes swing{
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+#photo{ 
+    position: relative;
+    width:40%;
+    float:right
+}
+ ul#nav {
+    width: 940px;
+    list-style: none; 
+    overflow: hidden;
+    margin: -5px auto 25px auto;
+    position: relative;
+ }
+	ul#nav li {
+        width: 126px;
+        height: 33px; 
+        float: left;
+        padding: 13px 0 0 0;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-right: 50px
+	}
+
+		ul#nav li a {
+			color: #616369; text-decoration: none;
+		}
+			ul#nav li a:hover {
+				color: #EE8245;
+            }
+            
+                #header h1 {
+                    font: 38px Georgia, Serif; 
+                    color: #f1f2eb; 
+                    letter-spacing: 2px; 
+                    margin: 0 0 0px 31%;
+                    text-shadow: 0px 3px 3px #494949;
+                    text-align: center;
+                    padding : 1.5em;
+                    border : 0.5em solid #EE8245;
+                    width  : 4em;
+                    height : 4em;
+                    border-radius: 100%;
+                }
+                #header h1{
+                        -webkit-animation: rotate 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                animation: rotate 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    }
+                    @-webkit-keyframes rotate {
+                        0% {
+                          -webkit-transform: rotate(-360deg);
+                                  transform: rotate(-360deg);
+                          opacity: 0;
+                        }
+                        100% {
+                          -webkit-transform: rotate(0);
+                                  transform: rotate(0);
+                          opacity: 1;
+                        }
+                      }
+                      @keyframes rotate {
+                        0% {
+                          -webkit-transform: rotate(-360deg);
+                                  transform: rotate(-360deg);
+                          opacity: 0;
+                        }
+                        100% {
+                          -webkit-transform: rotate(0);
+                                  transform: rotate(0);
+                          opacity: 1;
+                        }
+                      }
+
+                
+                    /* #header h1{
+                        text-align: center;
+                        animation-name: spin, depth;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-duration: 3s;
+                      }
+                      @keyframes spin {
+                        from { transform: rotateZ(0deg); }
+                        to { transform: rotateZ(-360deg); }
+                      }
+                      @keyframes depth {
+                        0% { text-shadow: 0 0 black; }
+                        25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+                        50% { text-shadow: 0 0 black; }
+                        75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+                        100% { text-shadow: 0 0 black; }
+                      } */
+                #first{
+                    font: 20px Georgia, Serif; color: #f2f0eb;
+                    text-shadow: 0px 3px 3px #494949;
+                    text-align: center;
+                    padding : 2em;
+                    border : 0.5em solid #EE8245;
+                    width  : em;
+                    height : em;
+                    border-radius: 100%;
+                }
+                #second{
+                    font: 20px Georgia, Serif; 
+                    color: #f2f0eb;
+                    text-shadow: 0px 3px 3px #494949;
+                    text-align: center;
+                    padding : 2em;
+                    border : 0.5em solid #EE8245;
+                    width  : 4em;
+                    height : em;
+                    border-radius: 100%;
+                    margin-left: 37%;
+                }
+                #content {
+                    padding: 57px 69px 50px 69px;
+                    color: #f1f2eb
+                
+                }
+                    #content h2 {
+                        font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+                        text-align: center;
+                    }
+                
+                    #content h3 {
+                        font: 26px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+                        text-align:center;
+                        background-color: #EE8245;
+                        box-shadow: 4px 4px black
+                    }
+                    
+                    #content p {
+                        margin: 0 0 30px 0;
+                        text-align: center
+                    }
+                    
+                    #content a {
+                        color:rgb(240, 142, 13); text-decoration: none;
+                    }
+                        #content a:hover {
+                            color: rgb(240, 142, 13);
+                        }
+                    
+    
+            
+                    #footer {
+                        padding: 40px 0 0 0;
+                        overflow: hidden; margin: 0 0 30px 0;
+                        text-align: center;
+                        text-decoration: none !important
+                    }
+                            #footer a:hover {
+                                color: #EE8245;
+                            }
