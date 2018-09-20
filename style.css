@@ -4,6 +4,11 @@
         display:none;
     }
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width:1920px) { 
+    nav{
+        display:none;
+    }
+}
 @media only screen and (max-width: 634px){
     #navbar li a{
         display:none;
@@ -65,6 +70,7 @@ html{
     text-align:center;
     padding:20px;
     background:rgb(212, 212, 214);
+    z-index:99;
 }
     .pic{
     min-width:220px;
