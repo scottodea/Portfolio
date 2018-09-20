@@ -4,6 +4,15 @@
         display:none;
     }
 }
+@media only screen and (max-width: 360px){
+        #navbar li a{
+            display:none;
+        }
+        .hamburger{
+            margin-left:auto
+        } 
+}
+
 @media only screen and (max-width: 640px){
     #navbar li a{
         display:none;
