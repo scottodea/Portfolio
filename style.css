@@ -1,26 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 1200px){
     nav{
         display:none;
     }
 }
-@media only screen and (max-width: 360px){
-        #navbar li a{
-            display:none;
-        }
-        .hamburger{
-            margin-left:auto
-        } 
-}
-
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 1200px){
     #navbar li a{
         display:none;
     }
     .hamburger{
         margin-left:auto
     }
-
 }
 
 :root{
@@ -86,7 +76,7 @@ html{
     margin:0;
     margin-top:100px;
     /* padding:50px; */
-    color:rgb(209, 204, 204);
+    color:#EA6341;
     text-shadow:1px 1px rgb(190, 109, 32);
     font-family:-font;
     font-size: 50px;
@@ -120,7 +110,7 @@ html{
         margin:0;
         margin-top:100px;
         padding:50px;
-        color:rgb(209, 204, 204);
+        color:#EA6341;
         text-shadow:1px 1px rgb(190, 109, 32);
         font-family:-font;
         font-size: 50px;
