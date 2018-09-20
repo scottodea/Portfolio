@@ -4,7 +4,7 @@
         display:none;
     }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width:1920px) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width:2800px) { 
     nav{
         display:none;
     }
