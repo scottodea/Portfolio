@@ -6,33 +6,53 @@
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-<script src="mnavbar.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="particles.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <!-- Start of Hamburger -->
+    <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#"><li>Portfolio</li></a>
+                <a href="#music"><li>Music</li></a>
+                <a href="#contact"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+    <!-- End of Hamburger -->
     
+    <div class="container">
+        <div id="particles-js">
 	     <ul id="navbar">
-            <li><img class="logo" src="./logo3.png" alt="Scott O'Dea Logo" /></li>
+            <li><img id="logo" src="./logo3.png" alt="Scott O'Dea Logo"/></li>
+            <!-- <img class= "hamburger" src="https://d30y9cdsu7xlg0.cloudfront.net/png/204479-200.png" alt="dropdown-menu"> -->
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="#music">Music</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <h1 class= "welcome">Hi, I'm Scott O'Dea</h1>
     </div>
-    
+    </div>
+    <a id="about"></a>
     <div class="about">
-        <a id="about"></a>
-        <h1>About Scott O'Dea</h1>
+        <span></span>
+        <h1>About</h1>
         <div class="info">
-        <img class= "info" src="https://scontent.fsyd3-1.fna.fbcdn.net/v/t1.15752-9/42090786_1758193267582765_5591682493200728064_n.jpg?_nc_cat=0&oh=f6906fd4b0e449544971920006d8a612&oe=5C2CD21A" alt="Me">  
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, necessitatibus.</h2>
-        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>  
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+        <img class= "pic" src="https://scontent.fsyd3-1.fna.fbcdn.net/v/t1.15752-9/42090786_1758193267582765_5591682493200728064_n.jpg?_nc_cat=0&oh=f6906fd4b0e449544971920006d8a612&oe=5C2CD21A" alt="Me">  
+        <h2>Hi, my name is Scott O'Dea. I'm a 25 year-old aspiring developer and lover of music,
+            currently attending the Fast-Track Bootcamp at Coder Academy Sydney. <br> <br> 
+            Finding a great synergy between my personality and coding, I'm looking forward to a career as a full-stack developer.
+        </h2>
         </div>
         
          
@@ -43,8 +63,8 @@
     <div class="music"> 
             <a id="music"></a>  
             <h1>Music</h1> 
-            <p>Some Acoustic Guitar Songs</p>
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fscott.odea%2Fvideos%2F10155169725369046%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            <h2>Pure Imagination</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H4zWV4xiCnM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <div class="contact">
@@ -78,38 +98,32 @@
 </script>
 <script>// When the user scrolls the page, execute myFunction 
         window.onscroll = function() {myFunction()};
+    
         
-        // Get the navbar
         var navbar = document.getElementById("navbar");
         
-        // Get the offset position of the navbar
         var sticky = navbar.offsetTop;
         
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        
         function myFunction() {
-          if (window.pageYOffset >= sticky) {
+          if (window.pageYOffset >= 10)
+           {
             navbar.classList.add("sticky")
           } else {
             navbar.classList.remove("sticky");
           }
         }  
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "30px 10px";
-            document.getElementById("logo").style.fontSize = "25px";
-          } else {
-            document.getElementById("navbar").style.padding = "80px 10px";
-            document.getElementById("logo").style.fontSize = "35px";
-          }
-        }
+        // function scrollFunction() {
+        //   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        //     document.getElementById("logo").style.width = "50%";
+        //     document.getElementById("navbar").style.fontSize = "2px";
+        //   } else {
+        //     document.getElementById("logo").style.padding = "80px 10px";
+        //     document.getElementById("navbar").style.fontSize = "2px";
+        //   }
+        // }
 </script>
-<!-- <script>
-        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-        window.onscroll = function() {scrollFunction()};
-        
-        
-</script> -->
-
-
-
+<script>  particlesJS.load('particles-js', 'https://api.myjson.com/bins/197pms', function() {
+    console.log('callback - particles.js config loaded');
+  });</script>
 </body>
