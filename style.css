@@ -4,7 +4,7 @@
         display:none;
     }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width:2800px) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 5.8) and (max-width:509px) { 
     nav{
         display:none;
     }
@@ -37,6 +37,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     height:800px;
+    overflow:hidden;
 }
 .container ul{
     display:flex;
@@ -48,6 +49,7 @@ html{
 }
 #particles-js{
     height:800px;
+    overflow
 }
 #navbar a{
     display:block;
