@@ -38,15 +38,14 @@
             <!-- <img class= "hamburger" src="https://d30y9cdsu7xlg0.cloudfront.net/png/204479-200.png" alt="dropdown-menu"> -->
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#music">Music</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     </div>
 
-    <a id="about"></a>
-    <div class="about">
+    <div id="about" class="about">
         <span></span>
         <h1>About</h1>
         <div class="info">
@@ -57,24 +56,61 @@
         </h2>
         </div>
     </div>
-    <a id="portfolio"></a>
-    <div class="portfolio">
-        <h1>Portfolio</h1>     
+
+    
+    <div id="portfolio" class="portfolio">
+        <span></span>
+        <h1>Portfolio</h1>  
+        <div class="slider">
+                <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+                <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+                <div class="slider__inner">
+                  <div class="slider__contents">
+                    <img src="Hangman.jpg" alt="hangman">
+                    <h2 class="slider__caption">Hangman</h2>
+                    <p class="slider__txt">A Hangman Game coded in Ruby made for Terminal. Composed original sound effects </p>
+                  </div>
+                  <div class="slider__contents">
+                    <img src="leapyear.jpg" alt="Leap Year calculator">
+                    <h2 class="slider__caption">Leap-Year Calculator</h2>
+                    <p class="slider__txt">Find out Leap Years in a given period</p>
+                  </div>
+                  <div class="slider__contents">
+                    <img src="birthday.jpg" alt="birthday-app">
+                    <h2 class="slider__caption">Birthday</h2>
+                    <p class="slider__txt">Simple Birthday Calculator to find out age and time until next bday</p>
+                  </div>
+                  <div class="slider__contents">
+                    <h2 class="slider__caption">Mockup</h2>
+                    <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                  </div>
+                </div>
+              </div>   
     </div>
 
-
+    <a id="music"></a>  
     <div class="music"> 
-            <a id="music"></a>  
+            <span></span>
             <h1>Music</h1> 
             <h2>Pure Imagination</h2>
+            <div class="vids">
             <iframe src="https://www.youtube.com/embed/H4zWV4xiCnM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+            <iframe src="https://www.youtube.com/embed/to22meUpSEI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/le0BLAEO93g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
+    </div>
+    <a id="contact"></a>
     <div class="contact">
         <h1>Contact</h1>
         <div class="logos">
-        <i class="fa fa-facebook-square" style="font-size:60px;color:blue"></i>
-        <i class="fa fa-github-square" style="font-size:60px;color:black"></i>
+        <a href="https://www.facebook.com/scott.odea" target= "_blank" ><i class="fa fa-facebook-square" style="font-size:60px;color:blue"></i></a>
+        <a href=""></a> <i class="fa fa-github-square" style="font-size:60px;color:black"></i>
+        <i class="fa fa-linkedin-square" style="font-size:60px;color:#1178B3"></i>
+        <i class="fa fa-youtube" style="font-size:60px;color:red"></i>
+
         </div>
     </div>
     
@@ -85,7 +121,7 @@
         <p> &copy Scott O'Dea</p>
     </div>
     
-<script>$(document).ready(function(){
+<!-- <script>$(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -98,16 +134,11 @@
     };
   });
 });
-</script>
-<script>// When the user scrolls the page, execute myFunction 
+</script> -->
+<script>
         window.onscroll = function() {myFunction()};
-    
-        
         var navbar = document.getElementById("navbar");
-        
         var sticky = navbar.offsetTop;
-        
-        
         function myFunction() {
           if (window.pageYOffset >= 10)
            {
@@ -115,16 +146,7 @@
           } else {
             navbar.classList.remove("sticky");
           }
-        }  
-        // function scrollFunction() {
-        //   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        //     document.getElementById("logo").style.width = "50%";
-        //     document.getElementById("navbar").style.fontSize = "2px";
-        //   } else {
-        //     document.getElementById("logo").style.padding = "80px 10px";
-        //     document.getElementById("navbar").style.fontSize = "2px";
-        //   }
-        // }
+        }
 </script>
 <script>  particlesJS.load('particles-js', 'https://api.myjson.com/bins/197pms', function() {
     console.log('callback - particles.js config loaded');
