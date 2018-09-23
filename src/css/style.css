@@ -21,15 +21,23 @@ html {
 body h1 {
   text-align: center;
   margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
   padding-top:85px;
-  color: #EA6341;
+  color: var(--orange);
   text-shadow: 1px 1px #be6d20;
   font-size: 50px; }
+  a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease; }
+  
+  a:hover {
+    color: #EA6341; }
 
 #logo {
   max-width: 120px; }
 
-.container {
+.home {
   margin: 0;
   padding: 0;
   background-image: url(https://scontent.fsyd3-1.fna.fbcdn.net/v/t31.0-8/17635540_10155934729664046_880860063106615889_o.jpg?_nc_cat=0&oh=aa6e5ce20a42e5a8c2133c71cffd77cc&oe=5C20BF36);
@@ -38,7 +46,7 @@ body h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px; }
-  .container ul {
+  .home ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,10 +110,13 @@ body h1 {
   font-family: var(--font) 
   }
   .portfolio h1{
-    margin-bottom:80px;
+    margin-bottom:40px;
   }
-  .skills{ 
-    font-size: 34px
+  .skills{
+  padding-top:20px;
+  color: #EA6341;
+  font-size:34px;
+  margin-bottom:0;
   }
   .port-flex{
   display:flex;
@@ -124,6 +135,9 @@ body h1 {
 .port-display img{
   width:250px;
 }
+.port-display img:hover{
+opacity:0.8;
+}
 .code-logos{
   display: flex;
   flex-wrap: wrap;
@@ -132,12 +146,12 @@ body h1 {
 
 }
 .code-logos img{
-  width:100px;
-  height:100px;
+  width:80px;
+  height:80px;
   padding:40px;
 }
 #fatten{
-  width:130px
+  width:100px
 }
 
 .music {
@@ -145,14 +159,12 @@ body h1 {
   padding: 20px;
   background: #272727;
   box-shadow: 0px 0px 20px #1d1c1c; }
-  .music h2 {
-    color: #fff9f9;
-    font-size: 40px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #aa3ab4; }
+.music h1{
+  padding-bottom:40px;
+}
   .music iframe {
-    width: 30vw;
-    height: 30vh;
+    width: 40vw;
+    height: 35vh;
     min-width: 270px; }
   .music .vids {
     display: flex;
@@ -195,14 +207,6 @@ body h1 {
   box-shadow: 0px 0px 20px #1d1c1c;
   transition: all 1s ease;
   z-index: 3; }
-
-a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease; }
-
-a:hover {
-  color: #EA6341; }
 
 #menuToggle {
   display: block;
