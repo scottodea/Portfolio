@@ -1,5 +1,5 @@
 # Scott O'Dea Portfolio
-https://scottodea.github.io/Portfolio/
+https://scottodea.github.io
 ## Purpose
 #### The purpose of this portfolio is to display important information about myself in a responsive and user-friendly manner. It will be periodically updated as my skills and projects become more advanced.
 #### This portfolio is targeted at potential employers and clients.
